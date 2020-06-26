@@ -13,3 +13,14 @@ board_keys = []
 
 for key in theBoard:
     board_keys.append(key)
+    
+''' Now print the updated board after every move in the game and 
+    it will make a function in which it will define the printBoard function
+    so that it can easily print the board everytime by calling this function. '''
+
+def printBoard(board):
+    print(board['7'] + '|' + board['8'] + '|' + board['9'])
+    print('-+-+-')
+    print(board['4'] + '|' + board['5'] + '|' + board['6'])
+    print('-+-+-')
+    print(board['1'] + '|' + board['2'] + '|' + board['3'])
