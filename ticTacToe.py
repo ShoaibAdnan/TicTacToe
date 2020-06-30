@@ -24,3 +24,26 @@ def printBoard(board):
     print(board['4'] + '|' + board['5'] + '|' + board['6'])
     print('-+-+-')
     print(board['1'] + '|' + board['2'] + '|' + board['3'])
+
+#main function which has all the gameplay functionality
+    
+def game():
+
+    turn = 'X'
+    count = 0
+
+
+    for i in range(10):
+        printBoard(theBoard)
+        print("It's your turn," + turn + ".Which place do you want to move to?")
+
+        move = input()        
+
+        if theBoard[move] == ' ':
+            theBoard[move] = turn
+            count += 1
+        else:
+            print("That place is already taken.\nWhich place do you want to move?")
+            continue
+        
+        #rest of the code will be added later
